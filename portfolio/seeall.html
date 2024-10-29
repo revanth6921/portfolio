@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtherActivites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: #ff004f;">Other Activities</h1>
+</div>
+<div id="skills">
+    <div class="container">
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Books</h2>
+                <p>I love a wide variety of books, Here are some of my favorites across different genres:</p><br>
+                <p>> 1984</p><br>
+                <p>> Gravity</p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Games</h2>
+                <p>I love a Games that are physical board games to complex digital experiences:</p><br>
+                <p>> Chess</p><br>
+                <p>> Cricket</p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Music</h2>
+                <p>I appreciate a diverse range of music genres, each bringing something special. here are some of my favorites: </p><br>
+                <p>> Alan Walker</p><br>
+                <p>> melodies</p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Places</h2>
+                <p>I enjoy exploring a wide range of places, each offering something unique.</p><br>
+                <p>> Goa</p><br>
+                <p>> Darjeeling</p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Food</h2>
+                <p>I appreciate a wide variety of foods, each bringing different flavors and cultural significance. My favorite dishes are:</p><br>
+                <p>> Biryani</p><br>
+                <p>> chili baji</p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Favourites</h2>
+                <p></p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Friends</h2>
+                <p></p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>My Gallery</h2>
+                <p></p>
+                <a href="#" class="learnMore" data-popup="popup-books">learn more</a>
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
+<div id="popup-books" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p>Soory! Will update soon!</p>
+        <div class="popup-buttons">
+            <button class="ok-btn">OK</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+</div>
+<script>
+    var learnMoreLinks = document.querySelectorAll('.learnMore');
+    learnMoreLinks.forEach(function(link) {
+        link.onclick = function(event) {
+            event.preventDefault();
+            var popupId = this.getAttribute('data-popup');
+            var popup = document.getElementById(popupId);
+            popup.style.display = "block";
+        }
+    });
+    var closeBtns = document.querySelectorAll('.close-btn');
+    closeBtns.forEach(function(btn) {
+        btn.onclick = function() {
+            var popup = this.closest('.popup');
+            popup.style.display = "none";
+        }
+    });
+    var okBtns = document.querySelectorAll('.ok-btn');
+    var cancelBtns = document.querySelectorAll('.cancel-btn');
+
+    okBtns.forEach(function(btn) {
+        btn.onclick = function() {
+            alert("You clicked OK!");
+            var popup = this.closest('.popup');
+            popup.style.display = "none";
+        }
+    });
+    cancelBtns.forEach(function(btn) {
+        btn.onclick = function() {
+            alert("You clicked Cancel!");
+            var popup = this.closest('.popup');
+            popup.style.display = "none";
+        }
+    });
+    window.onclick = function(event) {
+        if (event.target.classList.contains('popup')) {
+            event.target.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

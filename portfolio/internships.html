@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/smarl.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div id="hobies">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                   <img src="images/salesforce1.jpg">
+                   <div class="layer">
+                    <h3>Salesforce</h3>     
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="images/yhill.jpg"> 
+                    <div class="layer">
+                        <h3>Machine Learing With Python</h3> 
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/intern.jpg"> 
+                    <div class="layer">
+                        <h3>Chatbot</h3>
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/intern1.jpg"> 
+                    <div class="layer">
+                        <h3>Machine Learning</h3>            
+                       </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+
+</script>
+</body>
+</html>

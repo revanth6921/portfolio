@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/cloud.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div id="hobies">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                   <img src="images/password.jpg">
+                   <div class="layer">
+                    <h3>Password Generation</h3>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="images/html.jpg"> 
+                    <div class="layer">
+                        <h3>HTML Course</h3> 
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/python.jpg"> 
+                    <div class="layer">
+                        <h3>Data Science, AI & Ml</h3>
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/timejone.jpg"> 
+                    <div class="layer">
+                        <h3>Timezone Generation</h3>            
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/ml.jpg"> 
+                    <div class="layer">
+                        <h3>Python in Advanced</h3>            
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/ds1.jpg"> 
+                    <div class="layer">
+                        <h3>Data Science</h3>            
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/cloud.jpg"> 
+                    <div class="layer">
+                        <h3>Cloud Computing</h3>            
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/ds.jpg"> 
+                    <div class="layer">
+                        <h3>Data Science</h3>            
+                       </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+<script>
+
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+
+</script>
+</body>
+</html>
